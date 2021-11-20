@@ -22,7 +22,7 @@ function main()
 
     while true do
         wait(0)
-        if isKeyDown(VK_SHIFT) and isKeyJustPressed(VK_0) then
+        if isKeyDown(VK_SHIFT) and isKeyJustPressed(VK_0) and not sampIsChatInputActive() then
             reconnect(DEFAULT_TIMEOUT)
         end
     end
